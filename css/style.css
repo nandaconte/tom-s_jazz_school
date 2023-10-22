@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+   
+}
+body{
+    background: linear-gradient(90deg,
+    #FFE7D1 70%,
+    rgb(255, 255, 255) 100%);
+    margin: 1rem 2rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+/* BARRA DE NAVEGAÇÃO */
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    
+   
+    padding: 0 3rem 1rem;
+    border-bottom: 1px solid black;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    
+}
+.menu-container{    
+    display: flex;
+    align-items: center;
+}
+.menu-container ul {
+    display: flex;
+    gap: 5rem;
+
+    list-style: none;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.menu-container li{
+    display: flex;
+}
+.menu-container a {
+    text-decoration: none;
+    text-shadow: -2px 1px 1px rgba(105, 103, 103, 0.394);
+    color: black;
+}
+
+.botton-container {
+    display: flex;
+    padding-bottom: 0.5rem;
+}
+
+.btn {
+    background-color: #ED4D1B;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 0px 0 black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid black;
+}
+/* BANNER */
+.container-principal{
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 6rem;
+}
+.container-info{
+    margin: 3rem;
+    width: 50%;
+}
+.container-info h1{
+    font-size:60px;
+}
+.decoration{
+    font-size: 64px;
+    color: #ED4D1B;
+    font-weight: bolder;
+    display: block;
+    position: relative;
+}
+.decoration::after{
+    content:"";
+    background: url(../img/three-dashes.svg);
+    position: absolute;
+    height: 36px;
+    width: 40px;
+}
+#start::after{
+    content:"";
+    background: url(../img/arrow-curve.svg);
+    position:absolute;
+    top:35rem;
+    width: 132px;
+    height: 48px;  
+}
+.container-info p{
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+/* Sobre as aulas */
+.class-container{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    border-bottom: 1px solid black;
+}
+.cards-container{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    box-shadow: 5px 5px 0px 0 black;
+   
+}
+.laranja{
+    background-color: #ED4D1B;
+    margin: 3rem;
+    position: relative;
+    top:-12rem;
+    padding: 1rem;
+    
+}
+.laranja h3{
+    padding-top: 1rem;
+}
+.laranja p{
+    padding-bottom: 4rem;
+    margin-top: 1rem;
+   
+   
+}
+.laranja a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+.amarelo{
+    background-color: #FF9A3C;
+    margin: 3rem;
+    position: relative;
+    top:-10rem;
+    padding: 1rem;
+}
+.amarelo h3{
+    padding-top: 1rem;
+}
+.amarelo p{
+    padding-bottom: 4rem;
+    margin-top: 1rem;
+   
+}
+.amarelo a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+.class-more{
+    text-align: center;
+    padding-bottom: 4rem;
+    
+}
+.class-more h1{
+    font-size: 64px;
+    font-weight: bolder;
+}
+.class-more .strong{
+    font-size: 64px;
+    color: #ED4D1B;
+    font-weight: bolder;
+}
+.class-more .btn{
+    margin-top: 3rem;
+}
+/* FOOTER */
+.rodape-container{
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.rodape-info{
+    width: 300px;
+}
+.rodape-info p{
+    margin-top: 3rem;
+    font-weight: bold;
+}
+.menu-rodape li{
+    list-style: none;
+    margin-bottom: 2rem;
+}
+.menu-rodape a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-size: 20px;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    
+}
+.newsletter label{
+    margin-bottom: 2rem;
+    font-size:24px;
+    font-weight: bold;
+}
+#email{
+   width: 400px;
+   height: 40px;
+   box-shadow: 5px 5px 0px 0 black;
+}
+.newsletter .btn{
+    margin-top: 2rem;
+    width: 300px;
+}
+
+@media (max-width:370px) {
+    body{
+        background: #FFE7D1;
+        margin:2rem;
+
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .nav-container{
+        display: block;
+        text-align: center;
+
+       
+        height: 300px;
+        margin-top: 2rem;
+        padding: 1rem;
+        
+    }
+    .logo-container{
+        display: block;
+        justify-content: center;
+        margin-bottom: 1rem;
+      
+    }
+    .menu-container ul{
+        display: grid;
+        grid-template-columns: 20px 20px;
+        gap:5rem;
+        margin-left: 3rem;
+    }
+    .botton-container{
+        display: block;
+        margin-top: 1rem;
+    }
+    .container-principal{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .banner-img{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .container-info{
+        display: block;
+        justify-content: center;
+        width: 100%;
+        margin-top: -2px;
+        margin-left: 2rem;
+    }
+    .container-info h1,
+    .decoration{
+        width: 100%;
+        font-size: 30px;
+        padding: 0;
+    }
+    .container-info p{
+        align-items: center;
+        width: 60%;
+        font-size: 12px;
+    }
+    .decoration::after{
+        content:"";
+        background: url(../img/three-dashes.svg);
+        position: absolute;
+        height: 36px;
+        width: 40px;
+        top:-15px;
+    }
+    #start::after{
+        display: none;
+    }
+    .class-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top:5rem;
+             
+    }
+    .cards-container{
+        display: block;
+        
+    }
+    .amarelo{
+        margin-bottom: 6rem;
+    }
+
+    .rodape-container{
+        display: block;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+    .rodape-info p{
+        margin-bottom: 1rem;
+        width: 80%;
+        font-weight: lighter;
+    }
+    #email{
+        width: 80%;
+    }
+.newsletter .btn{
+    width: 80%;
+    padding:1rem;
+       
+}
+    
+}
